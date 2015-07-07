@@ -1,0 +1,14 @@
+<template name="tweetsList">
+    <div class="wrapper">
+        <div class="container">
+            <h1>#Happiness</h1>
+        <ul id="myTweets">
+            {{#each tweets}}
+                <li id="{{_id}}">
+                    {{> tweetItem}}
+                </li>
+            {{/each}}
+        </ul>
+        </div>
+    </div>
+</template>
